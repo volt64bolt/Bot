@@ -4,7 +4,7 @@
 
 The bot for PlaceH43 and their allies! This bot connects with the jel server and gets it's orders from there. 
 
-##Tampermonkey Install
+## Tampermonkey Install
 1. Install the [tampermonkey extention](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=nl)
 2. Install the script by pressing this link (Tampermonkey should prompt an install): https://github.com/volt64bolt/Bot/raw/master/placenlbot.user.js
 3. Refresh your r/place page and enjoy! A blue pop-up should appear in the top-right corner.

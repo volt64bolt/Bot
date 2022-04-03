@@ -20,7 +20,7 @@ The bot for PlaceH43 and their allies! This bot connects with the jel server and
 ### Installation instructions
 
 1. Install [NodeJS](https://nodejs.org/).
-2. Download the bot via [this link](https://github.com/volt64bolt/Bot.git).
+2. Download the bot via [this link](https://github.com/volt64bolt/Bot/raw/master/placenlbot.user.js).
 3. Extract the bot anywhere on your desktop
 4. Open a command prompt/terminal in this folder
     Windows: Shift+right mousebutton in the folder -> Click on "open Powershell here"

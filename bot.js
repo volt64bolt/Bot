@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import getPixels from "get-pixels";
 import WebSocket from 'ws';
 
-const VERSION_NUMBER = 4;
+const VERSION_NUMBER = 43;
 
 console.log(`PlaceNL headless client V${VERSION_NUMBER}`);
 
@@ -166,7 +166,7 @@ function connectSocket() {
         switch (data.type.toLowerCase()) {
             case 'map':
                 console.log(`Nieuwe map geladen (reden: ${data.reason ? data.reason : 'verbonden met server'})`)
-                currentOrders = await getMapFromUrl(`https://placenl.noahvdaa.me/maps/${data.data}`);
+                currentOrders = await getMapFromUrl(`http://jelcraft.zapto.org/rplace-ref.png`);
                 currentOrderList = getRealWork(currentOrders.data);
                 break;
             default:

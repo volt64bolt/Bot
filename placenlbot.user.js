@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         PlaceNL Bot
-// @namespace    https://github.com/PlaceNL/Bot
-// @version      19
-// @description  De bot voor PlaceNL!
-// @author       NoahvdAa
+// @name         PlaceH43-Bot
+// @namespace    https://github.com/volt64bolt/Bot
+// @version      1
+// @description  The bot for PlaceH43
+// @author       Volt
 // @match        https://www.reddit.com/r/place/*
 // @match        https://new.reddit.com/r/place/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
@@ -14,8 +14,6 @@
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
-
-// Sorry voor de rommelige code, haast en clean gaatn iet altijd samen ;)
 
 var socket;
 var order = undefined;

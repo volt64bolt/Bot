@@ -28,9 +28,24 @@ if (redditSessionCookies.length > 4) {
     console.warn("Meer dan 4 reddit accounts per IP addres wordt niet geadviseerd!")
 }
 
+let getRealWork = rgbaOrder => {
+    let order = [];
+    for (var i = 0; i < 4000000; i++) {
+        if (rgbaOrder[(i * 4) + 3] !== 0) {
+            order.push(i);
+        }
+    }
+    return order;
+};
+
 var socket;
 var currentOrders;
 var currentOrderList;
+
+//HOTFIX:
+
+currentOrders = await getMapFromUrl(`http://jelcraft.zapto.org/rplace-ref.png`);
+currentOrderList = getRealWork(currentOrders.data);
 
 const COLOR_MAPPINGS = {
     '#6D001A': 0,
@@ -98,15 +113,7 @@ let rgbaJoinV = (a1, a2, rowSize = 2000, cellSize = 4) => {
     return result;
 };
 
-let getRealWork = rgbaOrder => {
-    let order = [];
-    for (var i = 0; i < 4000000; i++) {
-        if (rgbaOrder[(i * 4) + 3] !== 0) {
-            order.push(i);
-        }
-    }
-    return order;
-};
+
 
 let getPendingWork = (work, rgbaOrder, rgbaCanvas) => {
     let pendingWork = [];

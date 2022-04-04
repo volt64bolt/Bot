@@ -4,15 +4,15 @@
 
 The bot for PlaceH43 and their allies! This bot connects with the jel server and gets it's orders from there. 
 
-## Tampermonkey Install
+## Tampermonkey Install \[BROKEN]
 1. Install the [tampermonkey extention](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=nl)
 2. Install the script by pressing this link (Tampermonkey should prompt an install): https://github.com/volt64bolt/Bot/raw/master/placenlbot.user.js
 3. Refresh your r/place page and enjoy! A blue pop-up should appear in the top-right corner.
 
-## Headless bot
+## Headless bot \[WORKING]
 
 ### How to get reddit_session cookie
-**NOTE: People have reported that this is annoying to do on chrome because teksts get unselected. Therefore we recommend that you use firefox.**
+**NOTE: Make sure to widen your inspect window, to make sure you copy the entire cookie value**
 
 1. Go to [r/place](https://reddit.com/r/place)
 2. Open dev tools and go to the network tab
@@ -25,8 +25,8 @@ The bot for PlaceH43 and their allies! This bot connects with the jel server and
 ### Installation instructions
 
 1. Install [NodeJS](https://nodejs.org/).
-2. Download the bot via [this link](https://github.com/volt64bolt/Bot/raw/master/placenlbot.user.js).
-3. Extract the bot anywhere on your desktop
+2. Download the source code.
+3. Extract the bot script anywhere on your desktop
 4. Open a command prompt/terminal in this folder
     Windows: Shift+right mousebutton in the folder -> Click on "open Powershell here"
 5. install the dependencies: `npm i`

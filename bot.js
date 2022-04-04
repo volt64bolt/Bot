@@ -130,12 +130,6 @@ let getPendingWork = (work, rgbaOrder, rgbaCanvas) => {
     connectSocket();
 
     startPlacement();
-
-    setInterval(() => {
-        if (socket) socket.send(JSON.stringify({ type: 'ping' }));
-    }, 5000);
-    // Refresh de tokens elke 30 minuten. Moet genoeg zijn toch.
-    setInterval(refreshTokens, 30 * 60 * 1000);
 })();
 
 function startPlacement() {
@@ -192,9 +186,9 @@ function connectSocket() {
     }
 
     socket.onopen = function () {
-        console.log('Verbonden met PlaceNL server!')
-        socket.send(JSON.stringify({ type: 'getmap' }));
-        socket.send(JSON.stringify({ type: 'brand', brand: `nodeheadlessV${VERSION_NUMBER}` }));
+        console.log('Connected to the Jel server!')
+        //socket.send(JSON.stringify({ type: 'getmap' }));
+        //socket.send(JSON.stringify({ type: 'brand', brand: `nodeheadlessV${VERSION_NUMBER}` }));
     };
 
     socket.onmessage = async function (message) {
